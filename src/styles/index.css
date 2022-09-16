@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+
+}
+
+.post {
+    margin-left: 20px;
+    border: 1px solid teal;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

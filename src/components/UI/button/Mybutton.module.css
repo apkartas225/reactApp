@@ -1,0 +1,10 @@
+.btn {
+    width: 50px;
+    border: 1px solid teal;
+    height: 40px;
+    cursor: pointer;
+    color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

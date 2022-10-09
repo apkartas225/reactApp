@@ -3,20 +3,18 @@ import { useState } from 'react'
 import { Myinput } from './UI/input/Myinput'
 import { Mybutton } from './UI/button/Mybutton'
 
-export const PostForm = ( {create} ) => {
+export const PostForm = ( {create, remove} ) => {
   const [ post, setNewPost ] = useState({ title: '', body: '' });
 
   const addNewPost = (e) => {
     setNewPost({ title: '', body: '' });
-    
     e.preventDefault();
     
-    setNewPost({ title: '', body: '' });
     const newPost = { ...post, id: Date.now() }
     create( newPost )
 
   }   
-
+  
     return (
         <div>
              <form>
